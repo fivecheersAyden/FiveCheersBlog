@@ -1,0 +1,29 @@
+server:
+  port: 1001
+  tomcat:
+    connection-timeout: 600000
+  netty:
+    connection-timeout: 600000
+
+spring:
+  datasource:
+    url: jdbc:mysql://www.fivecheers.com:3306/fivecheers
+    username: fivecheers
+    password: nil
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10 # 设置最大连接数
+      connection-test-query: SELECT 1 # 测试连接的查询语句
+      minimum-idle: 5 # 最小空闲连接数
+      idle-timeout: 60000 # 空闲连接超时时间，毫秒为单位
+      max-lifetime: 1200000 # 连接的最大生命周期，毫秒为单位
+  mvc:
+    static-path-pattern: /**
+  servlet:
+    multipart:
+      max-request-size: 12GB
+      max-file-size: 12GB
+
+custom:
+  file-path: /home/fcserver/uploadFile/
+  manager-secret: Deadpool1234-

@@ -1,0 +1,95 @@
+@keyframes right-fade-in {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+@keyframes left-fade-in {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+@keyframes top-fade-in {
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+@keyframes bottom-fade-in {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+@keyframes jump-out {
+    0%{
+        transform: translate(-50%, 0) scale(0);
+    }
+}
+@keyframes jump-out-1 {
+    0%{
+        transform: translate(0, 0) scale(0);
+    }
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+}
+@keyframes topDropAni {
+    0%{
+        transform: translate(-50%,-100%) scale(0);
+        opacity: 0;
+    }
+    20%{
+        transform: translate(-50%,-100%) scale(0);
+        opacity: 0;
+    }
+}
+@keyframes appear4-ani {
+    0%{
+        opacity: 0;
+        scale: 0;
+        transform: rotateX(90deg);
+    }
+    75%{
+        opacity: 1;
+        scale: 1;
+        transform: rotateX(0);
+    }
+}
+@keyframes appear4-back-ani {
+    0%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+}
+@keyframes rotateZ4 {
+    0%{
+        transform: translate(-50%, -50%) rotateZ(0);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+}
+
+@keyframes mianmen-ani {
+    0%{
+        margin: 0 200px;
+        opacity: 0;
+    }
+}
+
+@keyframes rotate-ani {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
